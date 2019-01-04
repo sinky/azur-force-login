@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Azur Force Login
-Plugin URI: http://my-azur.de
+Plugin URI: https://my-azur.de
 Description: Force Login for everything. Closed/Private Wordpress.
 Version: 2.0
 Author: Marco Krage
-Author URI: http://my-azur.de
+Author URI: https://my-azur.de
 */
 
 /*
