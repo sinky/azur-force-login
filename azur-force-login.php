@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Azur Force Login
-Plugin URI: https://my-azur.de
+Plugin URI: https://github.com/sinky/azur-force-login
 Description: Force Login for everything. Closed/Private Wordpress.
 Version: 2.0
 Author: Marco Krage
