@@ -3,7 +3,7 @@
 Plugin Name: Azur Force Login
 Plugin URI: https://github.com/sinky/azur-force-login
 Description: Force Login for everything. Closed/Private Wordpress.
-Version: 2.0
+Version: 2.1
 Author: Marco Krage
 Author URI: https://my-azur.de
 */
@@ -34,3 +34,8 @@ function azur_forcelogin() {
   auth_redirect();
 }
 add_action('template_redirect', 'azur_forcelogin');
+
+function azur_disable_rest_api( $access ) {
+	return new WP_Error( 'rest_disabled', __( 'The REST API has been disabled.' ), array( 'status' => rest_authorization_required_code() ) );
+}
+add_filter( 'rest_authentication_errors', 'azur_disable_rest_api');
